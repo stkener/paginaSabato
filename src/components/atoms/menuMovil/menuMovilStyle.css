@@ -1,0 +1,77 @@
+.menuMovil {
+    position: fixed;
+    top: 0;
+    left: -75%; /* Fuera de pantalla inicialmente */
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*flex-start;*/
+    transform: translateX(0);
+    transition: left 0.3s ease-in-out;
+    /*background-color: aquamarine;*/
+    cursor: default;
+
+    z-index: 100;
+    
+}
+
+.menuMovil.abierto {
+    left: 0; /* Aparece en pantalla */
+}
+
+.menuMovil nav a {
+    text-decoration: none;
+    color: #800000;
+    font-size: 3.5vh;    
+    margin-bottom: 15px;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    cursor: pointer;
+    font-family: 'Jacques Francois', serif;
+}
+
+.linkStyle{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content:center;
+
+    padding: 1% 0%;
+}
+
+.linkStyle:hover{
+    background-color: #9B9B9B;
+}
+
+.navStyle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    align-content: normal;
+
+    width: 100%;
+    height: auto;
+}
+
+/*.cerrarMenu {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}*/
+
+@media screen and (max-width: 768px) {
+    .menuMovil {
+        left: -50%;
+        width: 50%;
+    }    
+
+}

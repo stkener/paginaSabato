@@ -1,0 +1,206 @@
+
+.divGeneralEmbajada{
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/*ANIMACIONES*/
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95); /* Opcional: efecto de pequeño aumento */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aparecer {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0; /* Inicialmente invisible */
+}
+
+.aparecerDerecha{
+    animation: slideInFromRight 1s ease-out forwards;
+    opacity: 0;
+}
+
+.aparecerIzquierda{
+    animation: slideInFromLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+/*TITULO*/
+.tituloEmbajada{
+    color: #800000;
+    font-family: 'Jacques Francois', serif;
+    font-size: 8vh;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-align: center;
+
+    /*animation: slideIn 1.5s ease-out;*/
+}
+
+/*INSTITUCIONES*/
+.contenedorImgInstituciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+
+    max-width: 100%;
+}
+
+.imgMilMilenios{
+    width: 13vw;
+    height: auto;
+    animation-delay: 1.5s;
+}
+
+.imgUnesco{
+    width: 15vw;
+    height: auto;
+    animation-delay: 2s;
+}
+
+.imgPaz{
+    width: 10vw;
+    height: auto;
+    animation-delay: 2.5s;
+}
+
+/*PARRAFO DIPLOMA*/
+.contenedorParrafoDiploma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.parrafoContenedor{
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    padding: 2%;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: 2px solid blue;*/
+    animation-delay: 3s;
+}
+
+.parrafo span{
+    font-style: oblique;
+    display: inline; 
+    margin: 0;
+    padding: 0;
+}
+
+.imgDiplomaStyle{
+    width: 25vw;
+    height: auto;
+    animation-delay: 3s;    
+}
+
+/*LISTA FOTO*/
+
+.fotoPazStyle{
+    width: 50vw;
+    height: auto;        
+}
+
+.tituloValores, .listaValores{
+    color: #800000;
+    font-family: 'Jacques Francois', serif;
+    letter-spacing: 1px;
+    line-height: 3vw;
+
+}
+
+@media screen and (max-width: 768px) {
+  .imgMilMilenios{
+    width: 15vw;
+    height: auto;
+  }
+
+  .imgUnesco{
+    width: 17vw;
+    height: auto;
+  }
+
+  .imgPaz{
+    width: 12vw;
+    height: auto;
+  }
+
+  .contenedorParrafoDiploma{
+    flex-direction: column;
+  }
+
+  .imgDiplomaStyle{
+    width: 65vw;
+  }
+
+  .contenedorParrafoDiploma{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .valoresCel{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+
+    margin-top: 5%;    
+  }
+
+  .fotoPazStyle{
+    width: 75vw;
+    height: auto;        
+  }
+
+  .tituloValores, .listaValores{
+    letter-spacing: 1.5px;
+    line-height: 4vw;
+
+  }
+
+  .listaValores li{
+    line-height: 2;
+  }
+}

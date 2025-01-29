@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedorTituloLogo{
+    /*background-color: brown;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+
+    gap: 10px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.contenedorTituloLogo img {
+    object-fit: contain; /* Mantén las proporciones */
+    display: block;
+}
+
+.contenedorTituloLogo img.barra {
+    height: 60%; /* Reduce el tamaño relativo al contenedor */
+    max-width: 50px; /* Fija un ancho máximo razonable */
+}
+
+.contenedorTituloLogo img.footer {
+    height: 85%; /* Reduce el tamaño relativo al contenedor */
+    max-width: 140px; /* Fija un ancho máximo razonable */
+}
+
+.nombreLogo.barra{
+    display: flex;
+    flex-direction: column; /* Coloca los textos en columna */
+    justify-content: center; /* Centra los textos verticalmente */
+    max-height: 100%;
+}
+
+.nombreLogo p{
+    margin: 0; /* Elimina los márgenes predeterminados */
+    /*font-size: 25px; /* Ajusta el tamaño del texto según necesites */
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1;
+    color: #800000; /* Cambia si necesitas otro color */
+    margin: 2px 0; /* Espaciado entre párrafos */
+}
+
+.contenedorTituloLogo div p:nth-child(1), /* Primer párrafo (COLEGIO) */
+.contenedorTituloLogo div p:nth-child(2) { /* Segundo párrafo (ERNESTO SABATO) */
+    font-family: 'Jacques Francois', serif; /* Fuente Jacques Francois */
+    font-size: 2.5vh; /* Tamaño de letra 16px */
+    margin: 2px 0; /* Espaciado entre párrafos */
+    
+}
+
+.contenedorTituloLogo div p:nth-child(3) { /* Tercer párrafo (DIPREGEP 6499) */
+    font-family: 'Inter', sans-serif; /* Fuente Inter */
+    font-size: 2vh; /* Tamaño de letra 10px */
+}
+
+/*####################################################*/
+.contenedorTituloLogo.footer{ align-items: flex-start;}
+
+.nombreLogo.footer{ 
+    padding-top: 5%; 
+}
+
+.contenedorTituloLogo div p.footer:nth-child(1), /* Primer párrafo (COLEGIO) */
+.contenedorTituloLogo div p.footer:nth-child(2) { /* Segundo párrafo (ERNESTO SABATO) */
+    font-family: 'Jacques Francois', serif; /* Fuente Jacques Francois */
+    font-size: 25px; /* Tamaño de letra 16px */
+    margin: 2px 0; /* Espaciado entre párrafos */
+}
+
+.contenedorTituloLogo div p.footer:nth-child(3) { /* Tercer párrafo (DIPREGEP 6499) */
+    font-family: 'Inter', sans-serif; /* Fuente Inter */
+    font-size: 15px; /* Tamaño de letra 10px */
+}
+
+/* Estilos responsivos para TABLETS */
+@media screen and (max-width: 1024px) {
+    .contenedorTituloLogo{
+        margin-right: 10px ;
+    }
+    .contenedorTituloLogo img.footer {
+        object-fit: contain; /* Mantén las proporciones */
+        display: block;
+        /*width: 40%;*/
+        width: calc(20px + 10vw);
+        
+    }
+
+    .contenedorTituloLogo div p:nth-child(1).footer,
+    .contenedorTituloLogo div p:nth-child(2).footer {
+        font-size: 2.5vw;
+
+    }
+
+    .contenedorTituloLogo div p:nth-child(3).footer { 
+        font-size: 1.5vw;
+    }
+}
+    
+        
+
+@media screen and (max-width: 768px) {
+    .nombreLogo.barra p{
+        display: none;
+    }
+
+    .contenedorTituloLogo.footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: normal;
+    }
+
+    .contenedorTituloLogo div p:nth-child(1).footer,
+    .contenedorTituloLogo div p:nth-child(2).footer{
+        text-align: center;
+        font-size: 3.8vw;        
+    }
+
+    .contenedorTituloLogo div p:nth-child(3).footer {
+        text-align: center;        
+        font-size: 2.8vw;
+    }
+
+    .contenedorTituloLogo img.footer {
+        width: calc(35px + 10vw);
+    }
+}

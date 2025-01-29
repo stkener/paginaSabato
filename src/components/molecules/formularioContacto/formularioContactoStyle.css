@@ -1,0 +1,53 @@
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+    gap: 5vh;
+
+    width: 35vw;
+    background-color: #9B9B9B;
+    border: 2px solid #800000;
+    padding: 2%;
+}
+
+
+.labelStyle{
+    color: #800000;
+    font-family: 'Jacques Francois', serif;
+    letter-spacing: 1px;
+}
+
+.inputStyle{
+    border: 1px solid #800000;
+    border-radius: 4px;
+    width: 25vw;
+    box-sizing: border-box;
+    font-family: 'Jacques Francois', serif;
+    color: #800000;
+}
+
+.inputStyle::placeholder{
+    color: rgba(128, 0, 0, 0.25);/*#800000;*/
+    font-family: 'Jacques Francois', serif;
+    letter-spacing: 1px;
+}
+
+.inputStyle:focus{
+    color: #800000;
+    box-shadow: 0 0 0 0.2rem rgba(128, 0, 0, 0.25);
+    outline: none;   
+    border: 1px solid #800000; 
+}
+
+.optionStyle{
+    color: #800000;
+    font-family: 'Jacques Francois', serif;
+    letter-spacing: 1px;
+}
+
+.textareaStyle {
+    resize: none; /* Impide el redimensionado del textarea */
+}

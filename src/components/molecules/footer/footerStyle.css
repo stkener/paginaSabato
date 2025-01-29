@@ -1,0 +1,29 @@
+.estiloFooter {
+    background-color: #9B9B9B; /* Fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrar el contenido */
+    padding: 20px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+    position: relative; /* Para evitar solapamiento */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;  
+}
+
+@media screen and (max-width: 768px) {
+    .estiloFooter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: normal;
+    }
+}

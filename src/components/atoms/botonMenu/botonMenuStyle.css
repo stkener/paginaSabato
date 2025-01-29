@@ -1,0 +1,41 @@
+/*.boton-menu {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+}*/
+
+/* Efecto al pasar el mouse */
+/*.boton-menu:hover {
+    background-color: #0056b3; 
+}*/
+
+.botonMenuStyle {
+    color: #800000; /* Color del texto */
+    border: 2px solid #800000; /* Borde inicial */
+    /*border-radius: 4px; /* Borde ligeramente redondeado */
+    padding: 0.5vh 1vw; /* Espaciado interno */
+    display: inline-block; /* Para usar múltiples botones en línea */
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5vh; /* Tamaño del texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    /*box-shadow: inset 0 0 0 0 #D80286; */
+    transition: ease-out 0.4s; /* Animación fluida */
+    /*text-transform: uppercase;*/ /* Texto en mayúsculas */
+    text-align: center; /* Centrar texto */
+    background-color: #9B9B9B;
+}
+
+/* Animación al pasar el mouse */
+.botonMenuStyle:hover {
+    box-shadow: inset 0 100px 0 0 #800000; /* Desliza el color hacia abajo */
+    color: #FFF; /* Mantiene el texto blanco */
+}

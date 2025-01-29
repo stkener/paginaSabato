@@ -1,0 +1,229 @@
+.fotoNivelesEstilo{
+  width: 40%;
+  height: auto;
+}
+
+.contenedorParrafoImg{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: normal;
+}
+
+.estiloMarcoParrafo{
+    padding: 2%;
+}
+
+
+
+.contenedorHorarioIngresoUniforme{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+    
+}
+
+.imagenUniforme{
+    width: 25%;
+    height: auto;
+}
+
+.contenedorUbicacion{
+
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:flex-start;
+  align-items: center;
+  align-content: center;
+
+  gap: 4vw;
+
+  padding: 3%;
+    
+}
+
+.contenedorMapaInfo{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedorMapaInfo iframe{
+    width: 45vw;
+    height: auto;
+}
+
+.contenedorListaInfo{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.listaInfoStyle{
+
+    display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.listaInfoStyle{
+    color: #800000;
+    font-family: 'Jacques Francois', serif;
+    font-size: 3.5vh;
+    letter-spacing: 1px;
+    line-height: 8vh;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.listaInfoStyle li, .listaInfoStyle li a {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 1vh;  
+    
+}
+
+.listaInfoStyle li a{
+    text-decoration: none;
+    color: #800000;
+}
+
+.listaInfoStyle li a:hover{
+    color: #9B9B9B;
+}
+
+/*ANIMACIONES*/
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95); /* Opcional: efecto de pequeño aumento */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aparecer {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0; /* Inicialmente invisible */
+}
+
+.aparecerDerecha{
+    animation: slideInFromRight 1s ease-out forwards;
+    opacity: 0;
+}
+
+.aparecerIzquierda{
+    animation: slideInFromLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .contenedorParrafoImg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+
+    margin-bottom: 5%;
+  }
+
+  .estiloMarcoParrafo{
+    padding: 0;
+}
+
+.fotoNivelesEstilo{
+  width: 80%;
+  height: auto;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorHorarioIngresoUniforme{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+  }
+
+  .contenedorHorarioIngresoUniforme h3{
+    text-align: center;
+  }
+
+  .contenedorHorariosUniforme{
+    text-align: center;
+
+    margin-bottom: 5%;
+  }
+
+  .contenedorUniforme{
+    justify-content: center;  
+  }
+
+  .contenedorUbicacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+  }
+
+  .contenedorUbicacion h3{text-align: center;}
+
+.contenedorMapaInfo iframe{
+    width: 70vw;
+    height: auto;
+  }
+
+
+  
+}

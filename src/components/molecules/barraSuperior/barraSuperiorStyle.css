@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.barraTituloMenu {
+    background-color: #9B9B9B;
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+}
+
+@media screen and (max-width: 1024px) {
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    
+
+}
+

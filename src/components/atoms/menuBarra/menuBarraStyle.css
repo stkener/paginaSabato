@@ -1,0 +1,68 @@
+/*.menuBarraStyle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    gap: 5vh;  
+}*/
+
+.menuBarraStyle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    position: relative;
+}
+
+.submenuContainer {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: calc(100% + 5px); /* Espaciado del submenú debajo del botón */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el submenú respecto al botón */
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 10;
+    border-radius: 4px;
+    min-width: 150px; /* Ancho mínimo */
+}
+
+.submenuItem {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+.submenuItem:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .menuBarraStyle {
+        display:none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .menuBarraStyle {
+        display:none;
+    }
+
+}
