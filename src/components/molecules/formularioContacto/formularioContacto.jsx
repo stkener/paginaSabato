@@ -15,7 +15,7 @@ function FormularioContacto() {
         form_mensaje: ""//mensaje: ""
     });
 
-    const [errores, setErrores] = useState({});
+    /*const [errores, setErrores] = useState({});*/
     const [mostrarModal, setMostrarModal] = useState(false);
     const [modalMensaje, setModalMensaje] = useState("");
     
@@ -61,7 +61,7 @@ function FormularioContacto() {
             error.mensaje = "El mensaje no puede estar vacío.";
         }
 
-        setErrores(error);
+        /*setErrores(error);*/
         
         if (Object.keys(error).length > 0) {
             const messages = Object.values(error).join("\n");

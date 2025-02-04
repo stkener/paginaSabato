@@ -1,5 +1,4 @@
 import React from 'react';
-import BotonHamburguesa from '../atoms/botonHamburguesa/botonHamburguesa';
 
 function HistoriaPage() {
     return(
