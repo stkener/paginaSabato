@@ -72,6 +72,11 @@
     .menuMovil {
         left: -50%;
         width: 50%;
-    }    
+    } 
+    
+    .menuMovil nav a{
+        /*font-size: 3.3vh;*/
+        font-size: calc(8px + 2vw)
+    }
 
 }

@@ -33,6 +33,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .icono{
+        font-size: calc(10px + 2vw);
+    }
 
+    .hamburguesa{
+        width: calc(8px + 4vw);
+        height: calc(8px + 4vw);
+    }
 }
