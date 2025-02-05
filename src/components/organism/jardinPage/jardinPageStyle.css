@@ -98,7 +98,7 @@
     display: flex;
     align-items: center;
     gap: 1vw;
-    margin-bottom: 1vh;  
+    margin-bottom: 1vh;
     
 }
 
@@ -219,11 +219,19 @@
 
   .contenedorUbicacion h3{text-align: center;}
 
-.contenedorMapaInfo iframe{
+  .contenedorMapaInfo iframe{
     width: 70vw;
     height: auto;
   }
 
+  .icono{
+    font-size: 4vh;
+  }
+
+  .texto{
+    font-size: 2.9vh;
+    line-height: 4vh;
+  }
 
   
 }

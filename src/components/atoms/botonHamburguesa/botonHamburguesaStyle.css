@@ -38,7 +38,7 @@
     }
 
     .hamburguesa{
-        width: calc(10px + 4.5vw);
-        height: calc(10px + 4.5vw);
+        width: calc(15px + 4.5vw);
+        height: calc(15px + 4.5vw);
     }
 }
