@@ -70,8 +70,8 @@
 
 @media screen and (max-width: 768px) {
     .menuMovil {
-        left: -50%;
-        width: 50%;
+        left: -60%;
+        width: 60%;
     } 
     
     .menuMovil nav a{
