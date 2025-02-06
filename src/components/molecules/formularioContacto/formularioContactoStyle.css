@@ -51,3 +51,14 @@
 .textareaStyle {
     resize: none; /* Impide el redimensionado del textarea */
 }
+
+@media screen and (max-width: 768px) {
+    .formStyle{
+        width: 60vw;
+        
+    }
+
+    .inputStyle{
+        width: 50vw;
+    }
+}
