@@ -16,16 +16,16 @@ https://colegioernestosabatohurlingham.netlify.app/
 ![Home](docs/home.png)
 
 ### Educational Levels
-![Educational Levels](docs/secondary.png)
+![Educational Levels](docs/lavels.png)
 
 ### Peace Embassy
-![Peace Embassy](docs/peace-embassy.png)
+![Peace Embassy](docs/about.png)
 
 ### Mobile Navigation
-![Mobile Navigation](docs/mobile-menu.png)
+![Mobile Navigation](docs/menu.png)
 
 ### Contact Form
-![Contact Form](docs/contact.png)
+![Contact Form](docs/contacto.png)
 
 ---
 
