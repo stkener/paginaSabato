@@ -1,47 +1,49 @@
-# Colegio Ernesto Sabato Website
+# Colegio Ernesto Sabato
 
-A responsive institutional website developed for **Colegio Ernesto Sabato**. The project was created to provide information about the institution, its educational proposal, academic levels, and contact channels.
+A responsive institutional website developed for Colegio Ernesto Sabato. The project was created for a real client with the goal of providing information about the institution, its educational levels, contact channels, and educational proposal.
 
-This is the first production version of the website. A complete redesign using **React** and **Tailwind CSS** is planned for a future release.
+> **Note:** This project is currently considered a first version (MVP). Some sections contain placeholder content because the client did not provide the final information. A complete redesign using React and Tailwind CSS is planned.
 
-🔗 Live Demo: https://colegioernestosabatohurlingham.netlify.app/
+## 🌐 Live Demo
+
+https://colegioernestosabatohurlingham.netlify.app/
 
 ---
 
-## Preview
+## 📸 Preview
 
 ### Home
 ![Home](docs/home.png)
 
-### Navigation Menu
-![Menu](docs/menu.png)
+### Educational Levels
+![Educational Levels](docs/secondary.png)
 
-### Academic Levels
-![Academic Levels](docs/lavels.png)
+### Peace Embassy
+![Peace Embassy](docs/peace-embassy.png)
 
-### Peace Ambassador Section
-![Peace Ambassador](docs/about.png)
+### Mobile Navigation
+![Mobile Navigation](docs/mobile-menu.png)
 
 ### Contact Form
-![Contact](docs/contacto.png)
+![Contact Form](docs/contact.png)
 
 ---
 
-## Features
+## ✨ Features
 
 - Responsive design for desktop and mobile devices
 - Institutional information pages
-- Academic levels section
-- Peace Ambassador program section
+- Educational levels section
+- Image carousel
 - Contact form
 - Email integration using EmailJS
-- Navigation with React Router
-- Bootstrap responsive components
-- Font Awesome icons
+- Responsive navigation menu
+- Social media integration
+- Bootstrap-based UI components
 
 ---
 
-## Technologies
+## 🛠 Technologies
 
 - React
 - React Router
@@ -51,74 +53,49 @@ This is the first production version of the website. A complete redesign using *
 - EmailJS
 - Font Awesome
 - CSS3
-- JavaScript
 
 ---
 
-## Project Structure
-
-```
-src/
-│
-├── components/
-├── pages/
-├── assets/
-├── App.js
-└── index.js
-```
-
----
-
-## Installation
-
-Clone the repository
+## 🚀 Installation
 
 ```bash
 git clone https://github.com/stkener/paginaSabato.git
-```
 
-Install dependencies
+cd paginaSabato
 
-```bash
 npm install
-```
 
-Start the development server
-
-```bash
 npm start
 ```
 
 ---
 
-## Project Status
+## 📌 Project Status
 
-This project is completed as its first functional version and remains online.
+Completed first version.
 
-Some sections contain placeholder or partial institutional content because the required information was never provided by the client.
+A future update is planned with:
 
-A future version is planned using:
-
-- React (latest version)
+- React 19
 - Tailwind CSS
-- Modern UI/UX
-- Improved performance
-- Better component architecture
+- Modern UI/UX redesign
+- Improved component architecture
+- Content completion
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Sebastián Kener**
 
-Junior Software Developer
+Technical University Programmer | Junior/Trainee Software Developer
 
-- 🌐 Portfolio: https://stkener.github.io/portfolio_sebastian/
-- 💼 LinkedIn: https://linkedin.com/in/sebastiankener
-- 💻 GitHub: https://github.com/stkener
+- 🌐 **Portfolio:** https://stkener.github.io/portfolio_sebastian/
+- 💼 **LinkedIn:** https://linkedin.com/in/sebastiankener
+- 💻 **GitHub:** https://github.com/stkener
 
 ---
 
-## License
+## 📄 License
 
-This project was developed for a real client and is published for portfolio purposes only.
+This project was developed for a real client and is published exclusively as part of my professional portfolio.
